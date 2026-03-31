@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML5 Boilerplate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Guess the Country</h1>
+
+    <p id="fact">Click "Start Game" to begin!</p>
+
+    <button id="startBtn" onclick="startGame()">Start Game</button>
+
+    <div id="gameControls" style="display: none;">
+        <button onclick="nextQuestion()">Next Question</button>
+        <button onclick="restartGame()">Restart Game</button>
+    </div>
+
+    <p>
+        ✅ Correct: <span id="correctCount">0</span> |
+        ❌ Wrong: <span id="wrongCount">0</span>
+    </p>
+
+
+    <div class="flags">
+        <img src="https://flagcdn.com/w320/co.png" onclick="guess('Colombia')">
+        <img src="https://flagcdn.com/w320/id.png" onclick="guess('Indonesia')">
+        <img src="https://flagcdn.com/w320/za.png" onclick="guess('South Africa')">
+        <img src="https://flagcdn.com/w320/jp.png" onclick="guess('Japan')">
+        <img src="https://flagcdn.com/w320/vn.png" onclick="guess('Vietnam')">
+        <img src="https://flagcdn.com/w320/eg.png" onclick="guess('Egypt')">
+        <img src="https://flagcdn.com/w320/cl.png" onclick="guess('Chile')">
+        <img src="https://flagcdn.com/w320/it.png" onclick="guess('Italy')">
+        <img src="https://flagcdn.com/w320/mx.png" onclick="guess('Mexico')">
+
+    </div>
+
+    <h2 id="result"></h2>
+
+    <script src="script.js"></script>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
