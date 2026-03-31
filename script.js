@@ -93,10 +93,6 @@ function guess(country) {
     }
 }
 
-document.getElementById("wrongCount").innerText = wrongCount;
-
-document.getElementById("result").innerText = "❌ Wrong! Try again.";
-
 
 function restartGame() {
     currentAnswer = "";
