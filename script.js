@@ -2,6 +2,7 @@ let currentAnswer = "";
 let correctCount = 0;
 let wrongCount = 0;
 
+//countries and fun facts
 const countries = [
     {
         name: "Colombia",
@@ -41,6 +42,7 @@ const countries = [
     }
 ];
 
+//start game 
 function startGame() {
     document.getElementById("startBtn").style.display = "none";
     document.getElementById("gameControls").style.display = "block";
@@ -53,6 +55,7 @@ function startGame() {
     nextQuestion();
 }
 
+//next question
 function nextQuestion() {
     const randomIndex = Math.floor(Math.random() * countries.length);
     const selected = countries[randomIndex];

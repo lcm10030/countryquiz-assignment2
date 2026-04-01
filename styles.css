@@ -19,6 +19,17 @@ button {
   color: white;
 }
 
+button2 {
+  padding: 10px 20px;
+  margin: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: red;
+  color: white;
+}
+
 .flags {
   display: flex;
   justify-content: center;
